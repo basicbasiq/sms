@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
 
+    font-family: "Montserrat", sans-serif;
     height: 100vh;
 }
 
@@ -16,4 +19,35 @@ body {
     border-radius: 70px;
     height: 550px;
     width: 400px;
+}
+
+.form-container h1 {
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+.input-style {
+    width: 65%;
+    height: 37px;
+    border: none;
+    border-bottom: solid 1px black;
+    outline: none;
+    background: #f9fafb;
+    border-radius: 3px;
+    padding-left: 10px;
+
+    transition: 200ms;
+}
+
+.input-style:focus {
+    width: 65%;
+    height: 37px;
+    border: none;
+    border-bottom: solid 2px #3b82f6;
+    outline: none;
+    background: #f9fafb;
+    border-radius: 3px;
+    padding-left: 10px;
+
+    transition: 200ms;
 }
