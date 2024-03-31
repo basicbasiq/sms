@@ -7,73 +7,101 @@ body {
 
     font-family: "Montserrat", sans-serif;
     height: 100vh;
+    background: #1A1A1D;
 }
 
 .form-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-
-    border: solid 1px black;
-    border-radius: 12px;
-    height: 530px;
-    width: 450px;
+    
+    height: 77%;
+    width: 67%;
 
     padding: 25px 0;
 }
 
-.form-container h1 {
-    text-transform: uppercase;
-    font-size: 1.5rem;
+.form-page {
+    background-color: #F8FFE5;
+
+    width: 37%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-image-container {
+    width: 63%;
+    max-height: 100%;
+}
+
+.form-image-container img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.form-page h1 {
+    text-transform: capitalize;
+    font-size: 2rem;
     margin: 0;
-    margin-bottom: 36px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    color: #B8170A;
+    font-weight: 400;
+    border-bottom: solid #B8170A 1px;
+    width: 50%;
+    text-align: center;
 }
 
 .input-style {
-    width: 65%;
-    height: 37px;
+    width: 63%;
+    height: 47px;
     border: none;
-    border-bottom: solid 2px #52525b;
     outline: none;
-    background: #f9fafb;
-    border-radius: 3px;
+    background-color: #f0ccb6;
+    border-radius: 50px;
     padding-left: 10px;
+    color: grey;
+    padding-left: 30px;
+    font-size: medium;
+    margin: 13px 0;
 
     transition: 200ms;
+}
+
+.input-style::placeholder {
+    color: #fff7ed;
 }
 
 .input-style:focus {
-    width: 70%;
-    height: 37px;
-    border: none;
-    border-bottom: solid 2px #3b82f6;
-    outline: none;
-    background: #e5e7eb;
-    border-radius: 3px;
-    padding-left: 10px;
-
+    width: 68%;
     transition: 200ms;
 }
 
-.form-container button {
-    width: 68%;
-    height: 40px;
-    border-radius: 6px;
+.form-page button {
+    width: 25%;
+    height: 47px;
+    border-radius: 50px;
     border: none;
     outline: none;
     margin-top: 14px;
+    margin-bottom: 83px;
 
     font-size: medium;
+    font-weight: 600;
     text-transform: capitalize;
 
-    background-color: #1d4ed8;
-    color: #dbeafe;
+    background-color: #FF2E00;
+    color: #F8FFE5;
 
     transition: 300ms;
 }
 
-.form-container button:hover {
+.form-page button:hover {
     background-color: #2563eb;
     transition: 300ms;
 }

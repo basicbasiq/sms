@@ -8,16 +8,17 @@
     </head>
 
     <body>
-        <form class="form-container" action="/action_page.php">
-            <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
-                <h1>avid student registry</h1>
-                <input class="input-style" type="text" id="fname" name="fname" placeholder="first name"><br>
-                <input class="input-style" type="text" id="fname" name="fname" placeholder="last name"><br>
-                <input class="input-style" type="text" id="lname" name="lname" placeholder="contact"><br>
-                <input class="input-style" type="text" id="lname" name="lname" placeholder="email"><br>
-                <input class="input-style" type="text" id="lname" name="lname" placeholder="address"><br>
-                <button type="submit">submit</button>
+        <div class="form-container" action="/action_page.php">
+            <form class="form-page">
+                <h1>login</h1>
+                <input class="input-style" type="text" id="username" name="username" placeholder="username">
+                <input class="input-style" type="password" id="password" name="password" placeholder="password">
+                <button type="submit">login</button>
+            </form>
+
+            <div class="form-image-container">
+                <img src="./ui/assets/form-image.png" alt="">
             </div>
-        </form> 
+        </div>  
     </body>
 </html>
